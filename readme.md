@@ -166,7 +166,7 @@ project:
     -> client:
         -> src:
             -> js:
-                -> index.js
+                -> index.jsx
                 -> components:
                     -> App.jsx
                     -> Component2.jsx
