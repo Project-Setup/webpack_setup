@@ -207,7 +207,7 @@ project:
 
 15. import css style files in .js script
 ~~~~~
-import style from '../main.css';
+import style from '../css/main.css';
 ~~~~~
 ('mini-css-extract-plugin' can load the required css file from each individual js files)
 
