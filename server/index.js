@@ -4,10 +4,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.json);
-
 // use morgan to log incoming reuests
 app.use(morgan('dev'));
+
+app.use(express.json());
 
 // handle cors
 /* eslint-disable consistent-return */
@@ -57,5 +57,5 @@ module.exports = app;
 
 if (!module.parent) {
   app.listen(port);
-  console.log(`splitTable listening on ${port}`);
+  console.log(`server listening on ${port}`);
 }

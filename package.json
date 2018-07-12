@@ -4,7 +4,8 @@
   "description": "help setup development level react webpack environment",
   "scripts": {
     "test": "",
-    "dev": "webpack -d --watch"
+    "dev": "webpack -d --watch",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
