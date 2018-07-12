@@ -101,7 +101,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: {main: './client/src/js/index.js'},
+    entry: {main: './client/src/js/index.jsx'},
     resolve: { extensions: ['.js', '.jsx'] },
     output: {
         path: path.resolve(__dirname, 'public'),
