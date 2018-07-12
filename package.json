@@ -1,0 +1,50 @@
+{
+  "name": "webpack_setup",
+  "version": "1.0.0",
+  "description": "help setup development level react webpack environment",
+  "scripts": {
+    "test": "",
+    "dev": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-Setup/webpack_setup.git"
+  },
+  "keywords": [
+    "webpack",
+    "setup",
+    "eslint",
+    "babel",
+    "react"
+  ],
+  "author": "David Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Project-Setup/webpack_setup/issues"
+  },
+  "homepage": "https://github.com/Project-Setup/webpack_setup#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
