@@ -36,8 +36,7 @@ public/
 ~~~~
 
 5. install babel
-`npm install --save-dev babel-core babel-loader babel-plugin-transform-object-rest-spread babel-preset-env babel-preset-react`
-('babel-plugin-transform-object-rest-spread' plugin is for using *rest and spread operators*, optional)
+`npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react`
 
 6. install html webpack plugins
 `npm install html-webpack-plugin html-loader --save-dev`
@@ -68,7 +67,6 @@ save and run npm install again to install the required dependencies
     "presets": [
         "env", "react"
     ],
-    "plugins": ["transform-object-rest-spread"]
 }
 ~~~~
 
@@ -214,3 +212,41 @@ import style from '../css/main.css';
 16. run webpack watch in terminal
 `npm run dev`
 ('dev' script is predefined in step 4. index.html and main.css, main.js files will be exported to 'public' folder as user defined.)
+
+**Optional**
+* To use *rest and spread operators*
+1. install babel plugin
+`npm install babel-plugin-transform-object-rest-spread --save-dev`
+
+2. change **.babelrc** 
+~~~~
+{
+    "presets": ......,
+    "plugins": ["transform-object-rest-spread"]
+}
+~~~~
+
+* To use *async/await*
+1. install babel plugins
+`npm install --save babel-runtime`
+`npm install --save-dev babel-plugin-transform-runtime`
+
+2. change **.babelrc**
+~~~~
+{
+    "presets": ......,
+    "plugins": [
+        ......, 
+        [
+            "transform-runtime",
+            {
+                "helpers": false,
+                "polyfill": false,
+                "regenerator": true,
+                "moduleName": "babel-runtime"
+            }
+        ]
+    ]
+}
+~~~~
+
